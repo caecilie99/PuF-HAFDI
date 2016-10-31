@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HafdiRestController {
 
-    private static final String greeting = "es gibt ein %s";
+    private static final String greeting = "ich bin ein %s";
 
-    @RequestMapping("/hello")
-    public Hello hello(@RequestParam(value = "schiff", defaultValue = "Ruderboot") String schiff ){
-        return new Hello((long) 1, String.format(greeting, schiff));
+    @RequestMapping("/show")
+    public Show hello(@RequestParam(value = "schiff", defaultValue = "Ruderboot") String schiff ){
+        return new Show((long) 1, String.format(greeting, schiff));
 
     }
 
