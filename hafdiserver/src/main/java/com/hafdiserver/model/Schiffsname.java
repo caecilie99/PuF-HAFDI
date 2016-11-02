@@ -5,10 +5,11 @@ import javax.persistence.*;
 
 /**
  * Created by Birgit on 31.10.2016.
+ *
  */
 
 @Entity
-public class Schiff {
+public class Schiffsname {
 
     @Id
     @GeneratedValue
@@ -17,7 +18,7 @@ public class Schiff {
     @Column(nullable = false)
     public String name;
 
-    public Schiff(String name) {
+    public Schiffsname(String name) {
         this.name = name;
     }
 

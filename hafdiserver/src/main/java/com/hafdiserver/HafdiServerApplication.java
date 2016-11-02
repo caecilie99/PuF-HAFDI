@@ -1,7 +1,7 @@
 package com.hafdiserver;
 
 import com.hafdiserver.dao.HafdiDao;
-import com.hafdiserver.model.Schiff;
+import com.hafdiserver.model.Schiffsname;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,7 +17,7 @@ public class HafdiServerApplication {
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("spring-config.xml");
 		HafdiDao dao = (HafdiDao) ctx.getBean("mydao");
-		Schiff ruderboot = new Schiff("Ruderboot 2");
+		Schiffsname ruderboot = new Schiffsname("Ruderboot 2");
 		dao.saveSchiff(ruderboot);
 		SpringApplication.run(HafdiServerApplication.class, args);
 	}

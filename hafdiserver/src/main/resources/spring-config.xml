@@ -15,7 +15,7 @@
         <property name="dataSource" ref="HafdiDataSource"/>
         <property name="annotatedClasses">
             <list>
-                <value>com.hafdiserver.model.Schiff</value>
+                <value>com.hafdiserver.model.Schiffsname</value>
             </list>
         </property>
         <property name="hibernateProperties">

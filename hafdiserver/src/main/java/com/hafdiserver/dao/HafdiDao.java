@@ -1,6 +1,6 @@
 package com.hafdiserver.dao;
 
-import com.hafdiserver.model.Schiff;
+import com.hafdiserver.model.Schiffsname;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
@@ -15,7 +15,7 @@ public class HafdiDao {
         this.hafdiSessionFactory = sessionFactory;
     }
 
-    public void saveSchiff(Schiff schiff) {
+    public void saveSchiff(Schiffsname schiff) {
         Session session = this.hafdiSessionFactory.openSession();
         session.beginTransaction();
         session.save(schiff);
